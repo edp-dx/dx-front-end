@@ -1,0 +1,1 @@
+1. Application dx-frontend has been successfully deployed!!

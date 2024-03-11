@@ -1,0 +1,46 @@
+{
+	"videos": [
+		{
+			"id": 0,
+			"type": "video/mp4",
+			"source": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/01-DEXP-1st-Chapter.mp4",
+			"thumb": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/assets/player_1_part.png",
+			"title": "01 Welcome [0:48]"
+		},
+		{
+			"id": 1,
+			"type": "video/mp4",
+			"source": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/02-DEXP-2nd-Chapter.mp4",
+			"thumb": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/assets/player_2_part.png",
+			"title": "02 Application Template [0:40]"
+		},
+		{
+			"id": 2,
+			"type": "video/mp4",
+			"source": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/03-DEXP-3rd-Chapter.mp4",
+			"thumb": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/assets/player_3_part.png",
+			"title": "03 Environment Configuration [0:28]"
+		},
+		{
+			"id": 3,
+			"type": "video/mp4",
+			"source": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/04-DEXP-4th-Chapter.mp4",
+			"thumb": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/assets/player_4_part.png",
+			"title": "04 Scaffolding Engine [0:39]"
+		},
+		{
+			"id": 4,
+			"type": "video/mp4",
+			"source": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/05-DEXP-5th-Chapter.mp4",
+			"thumb": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/assets/player_5_part.png",
+			"title": "05 Application Management Page [0:26]"
+		},
+		{
+			"id": 5,
+			"type": "video/mp4",
+			"source": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/06-DEXP-6th-Chapter.mp4",
+			"thumb": "https://dx-platform-static-files.s3.eu-central-1.amazonaws.com/assets/player_6_part.png",
+			"title": "06 Scaffolding Wizard Page [0:38]"
+		}
+	]
+}

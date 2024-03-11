@@ -1,0 +1,445 @@
+{
+	"sources": [
+		{
+			"id": 0,
+			"name": "Jira",
+			"available": true,
+			"widgets": [
+				{
+					"id": 0,
+					"name": "Project Details",
+					"available": true,
+					"params": [
+						{
+							"id": 0,
+							"name": "Project Name",
+							"type": "select",
+							"placeholder": "Select one from the list below...",
+							"options": [
+								{
+									"id": 0,
+									"name": "Solaris (SOL)",
+									"available": false
+								},
+								{
+									"id": 1,
+									"name": "Nebula (NEB)",
+									"available": false
+								},
+								{
+									"id": 3,
+									"name": "Aurora (AUR)",
+									"available": false
+								},
+								{
+									"id": 4,
+									"name": "Voyager (VOY)",
+									"available": false
+								},
+								{
+									"id": 5,
+									"name": "Phoenix (PHX)",
+									"available": false
+								},
+								{
+									"id": 6,
+									"name": "Horizon (HRZ)",
+									"available": true
+								},
+								{
+									"id": 7,
+									"name": "Galactic (GLC)",
+									"available": false
+								},
+								{
+									"id": 8,
+									"name": "Pegasus (PEG)",
+									"available": false
+								},
+								{
+									"id": 9,
+									"name": "Midas (MDA)",
+									"available": false
+								},
+								{
+									"id": 10,
+									"name": "Helios (HLS)",
+									"available": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": 1,
+					"name": "Project Progress",
+					"available": false
+				},
+				{
+					"id": 2,
+					"name": "Epic Burndown",
+					"available": false
+				},
+				{
+					"id": 3,
+					"name": "Velocity Chart",
+					"available": false
+				},
+				{
+					"id": 4,
+					"name": "Version Report",
+					"available": false
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "Telescope",
+			"available": true,
+			"widgets": [
+				{
+					"id": 0,
+					"name": "Project Candidates",
+					"available": true,
+					"params": [
+						{
+							"id": 0,
+							"name": "Project Name",
+							"type": "select",
+							"placeholder": "Select one from the list below...",
+							"options": [
+								{
+									"id": 0,
+									"name": "Solaris (SOL)",
+									"available": false
+								},
+								{
+									"id": 1,
+									"name": "Nebula (NEB)",
+									"available": false
+								},
+								{
+									"id": 3,
+									"name": "Aurora (AUR)",
+									"available": false
+								},
+								{
+									"id": 4,
+									"name": "Voyager (VOY)",
+									"available": false
+								},
+								{
+									"id": 5,
+									"name": "Phoenix (PHX)",
+									"available": false
+								},
+								{
+									"id": 6,
+									"name": "Horizon (HRZ)",
+									"available": true
+								},
+								{
+									"id": 7,
+									"name": "Galactic (GLC)",
+									"available": false
+								},
+								{
+									"id": 8,
+									"name": "Pegasus (PEG)",
+									"available": false
+								},
+								{
+									"id": 9,
+									"name": "Midas (MDA)",
+									"available": false
+								},
+								{
+									"id": 10,
+									"name": "Helios (HLS)",
+									"available": false
+								}
+							]
+						},
+						{
+							"id": 1,
+							"name": "Seniority Level",
+							"type": "select",
+							"placeholder": "Select one from the list below...",
+							"options": [
+								{
+									"id": 0,
+									"name": "A1",
+									"available": false
+								},
+								{
+									"id": 1,
+									"name": "A2",
+									"available": false
+								},
+								{
+									"id": 2,
+									"name": "A3",
+									"available": true
+								},
+								{
+									"id": 3,
+									"name": "A4",
+									"available": false
+								},
+								{
+									"id": 4,
+									"name": "A5",
+									"available": false
+								},
+								{
+									"id": 5,
+									"name": "B1",
+									"available": false
+								},
+								{
+									"id": 6,
+									"name": "B2",
+									"available": false
+								},
+								{
+									"id": 7,
+									"name": "B3",
+									"available": false
+								},
+								{
+									"id": 8,
+									"name": "B4",
+									"available": false
+								},
+								{
+									"id": 9,
+									"name": "B5",
+									"available": false
+								}
+							]
+						},
+						{
+							"id": 2,
+							"name": "Skills",
+							"type": "text",
+							"placeholder": "Type the required Skill name here..."
+						}
+					]
+				},
+				{
+					"id": 1,
+					"name": "Seniority Pyramid",
+					"available": false
+				},
+				{
+					"id": 2,
+					"name": "Duration",
+					"available": false
+				},
+				{
+					"id": 3,
+					"name": "FTE",
+					"available": false
+				},
+				{
+					"id": 4,
+					"name": "Customer",
+					"available": false
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Delivery Central Project",
+			"available": true,
+			"widgets": [
+				{
+					"id": 0,
+					"name": "Health Map",
+					"available": true,
+					"params": [
+						{
+							"id": 0,
+							"name": "Projects",
+							"type": "select",
+							"placeholder": "Select one from the list below...",
+							"options": [
+								{
+									"id": 0,
+									"name": "All",
+									"available": true
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": 1,
+					"name": "Project Status",
+					"available": true,
+					"params": [
+						{
+							"id": 0,
+							"name": "Project Name",
+							"type": "select",
+							"placeholder": "Select one from the list below...",
+							"options": [
+								{
+									"id": 0,
+									"name": "Solaris (SOL)",
+									"available": false
+								},
+								{
+									"id": 1,
+									"name": "Nebula (NEB)",
+									"available": false
+								},
+								{
+									"id": 3,
+									"name": "Aurora (AUR)",
+									"available": false
+								},
+								{
+									"id": 4,
+									"name": "Voyager (VOY)",
+									"available": false
+								},
+								{
+									"id": 5,
+									"name": "Phoenix (PHX)",
+									"available": false
+								},
+								{
+									"id": 6,
+									"name": "Horizon (HRZ)",
+									"available": true
+								},
+								{
+									"id": 7,
+									"name": "Galactic (GLC)",
+									"available": false
+								},
+								{
+									"id": 8,
+									"name": "Pegasus (PEG)",
+									"available": false
+								},
+								{
+									"id": 9,
+									"name": "Midas (MDA)",
+									"available": false
+								},
+								{
+									"id": 10,
+									"name": "Helios (HLS)",
+									"available": false
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": 2,
+					"name": "Project Roadmap",
+					"available": true,
+					"params": [
+						{
+							"id": 0,
+							"name": "Project Name",
+							"type": "select",
+							"placeholder": "Select one from the list below...",
+							"options": [
+								{
+									"id": 0,
+									"name": "Solaris (SOL)",
+									"available": false
+								},
+								{
+									"id": 1,
+									"name": "Nebula (NEB)",
+									"available": false
+								},
+								{
+									"id": 3,
+									"name": "Aurora (AUR)",
+									"available": false
+								},
+								{
+									"id": 4,
+									"name": "Voyager (VOY)",
+									"available": false
+								},
+								{
+									"id": 5,
+									"name": "Phoenix (PHX)",
+									"available": false
+								},
+								{
+									"id": 6,
+									"name": "Horizon (HRZ)",
+									"available": true
+								},
+								{
+									"id": 7,
+									"name": "Galactic (GLC)",
+									"available": false
+								},
+								{
+									"id": 8,
+									"name": "Pegasus (PEG)",
+									"available": false
+								},
+								{
+									"id": 9,
+									"name": "Midas (MDA)",
+									"available": false
+								},
+								{
+									"id": 10,
+									"name": "Helios (HLS)",
+									"available": false
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Elasticsearch",
+			"available": false,
+			"widgets": []
+		},
+		{
+			"id": 4,
+			"name": "Snowflake",
+			"available": false,
+			"widgets": []
+		},
+		{
+			"id": 5,
+			"name": "ServiceNow",
+			"available": false,
+			"widgets": []
+		},
+		{
+			"id": 6,
+			"name": "DataDog",
+			"available": false,
+			"widgets": []
+		},
+		{
+			"id": 7,
+			"name": "AppDynamics",
+			"available": false,
+			"widgets": []
+		},
+		{
+			"id": 8,
+			"name": "SAP HANA®",
+			"available": false,
+			"widgets": []
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"en": {
+		"translation": {
+			"application_language_python": "Python",
+			"application_language_yaml": "YAML",
+			"application_language_javascript": "JavaScript",
+			"application_language_java": "Java",
+			"application_language_hcl": "HCL",
+			"application_framework_sam": "SAM",
+			"application_framework_terraform": "Terraform",
+			"application_framework_react": "React",
+			"application_framework_angular": "Angular",
+			"application_framework_fastapi": "FastAPI",
+			"application_framework_springboot": "SpringBoot",
+			"application_framework_crossplane": "Crossplane",
+			"application_framework_helm": "HELM",
+			"application_framework_cdk": "CDK",
+			"application_framework_micronaut": "Micronaut",
+			"application_framework_openliberty": "Open Liberty",
+			"application_build_tool_sam": "SAM",
+			"application_build_tool_terraform": "Terraform",
+			"application_build_tool_npm": "NPM",
+			"application_build_tool_python": "Python",
+			"application_build_tool_maven": "Maven",
+			"application_build_tool_crossplane": "Crossplane",
+			"application_build_tool_helm": "HELM",
+			"application_build_tool_gradle": "Gradle",
+			"application_build_tool_cdk": "CDK",
+			"application_deployment_platform_aws": "AWS",
+			"application_deployment_platform_kubernetes": "Kubernetes",
+			"application_deployment_platform_azure": "Azure",
+			"application_deployment_platform_atlas": "Atlas",
+			"application_deployment_platform_gcp": "GCP"
+		}
+	}
+}

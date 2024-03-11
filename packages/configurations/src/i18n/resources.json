@@ -1,0 +1,35 @@
+{
+	"en": {
+		"translation": {
+			"templates_language_python": "Python",
+			"templates_language_yaml": "YAML",
+			"templates_language_javascript": "JavaScript",
+			"templates_language_java": "Java",
+			"templates_language_hcl": "HCL",
+			"templates_framework_sam": "SAM",
+			"templates_framework_terraform": "Terraform",
+			"templates_framework_react": "React",
+			"templates_framework_angular": "Angular",
+			"templates_framework_fastapi": "FastAPI",
+			"templates_framework_springboot": "SpringBoot",
+			"templates_framework_crossplane": "Crossplane",
+			"templates_framework_micronaut": "Micronaut",
+			"templates_framework_helm": "HELM",
+			"templates_framework_cdk": "CDK",
+			"templates_build_tool_sam": "SAM",
+			"templates_build_tool_terraform": "Terraform",
+			"templates_build_tool_npm": "NPM",
+			"templates_build_tool_python": "Python",
+			"templates_build_tool_maven": "Maven",
+			"templates_build_tool_crossplane": "Crossplane",
+			"templates_build_tool_helm": "HELM",
+			"templates_build_tool_cdk": "CDK",
+			"templates_build_tool_gradle": "Gradle",
+			"templates_deployment_platform_aws": "AWS",
+			"templates_deployment_platform_kubernetes": "Kubernetes",
+			"templates_deployment_platform_azure": "Azure",
+			"templates_deployment_platform_atlas": "Atlas",
+			"templates_deployment_platform_gcp": "GCP"
+		}
+	}
+}

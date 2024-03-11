@@ -1,0 +1,226 @@
+[
+	{
+		"ID": 1,
+		"name": "CloudNative Serverless Application",
+		"description": "Applications are designed to fully leverage the advantages of serverless computing and provide scalability, low latency, and cost-efficiency.",
+		"templates": [
+			{
+				"categoryID": 1,
+				"enterpriseID": 20001,
+				"buildTool": "sam",
+				"description": "Create an HTTP API endpoint that calls a Lambda function.",
+				"deploymentPlatform": "aws",
+				"framework": "sam",
+				"language": "python",
+				"name": "API with Lambda back-end",
+				"type": "library",
+				"version": "v.1.0",
+				"components": ["API Gateway", "Lambda"],
+				"outputs": { "Subnets ID": "", "VPC ID": "" }
+			},
+			{
+				"categoryID": 1,
+				"enterpriseID": 20002,
+				"buildTool": "terraform",
+				"description": "Create a REST API endpoint that directly integrates with Amazon EventBridge.",
+				"deploymentPlatform": "aws",
+				"framework": "terraform",
+				"language": "python",
+				"name": "Event Publishing API",
+				"type": "",
+				"version": "v.1.0",
+				"components": ["API Gateway", "EventBridge"],
+				"outputs": { "Subnets ID": "", "VPC ID": "" }
+			},
+			{
+				"categoryID": 1,
+				"enterpriseID": 20003,
+				"buildTool": "sam",
+				"description": "Setup an event sourcing from the Queue to the Lambda function.",
+				"deploymentPlatform": "aws",
+				"framework": "sam",
+				"language": "python",
+				"name": "Event Subscription Processing",
+				"type": "",
+				"version": "v.1.0",
+				"components": ["SQS", "Lambda"],
+				"outputs": { "Account ID": "" }
+			}
+		]
+	},
+	{
+		"ID": 2,
+		"name": "Containerized UI Application",
+		"description": "Pack your UI code into containers to enable portability and quick prototyping.",
+		"templates": [
+			{
+				"categoryID": 2,
+				"enterpriseID": 40001,
+				"buildTool": "npm",
+				"description": "Create interactive, dynamic, and highly performant user interfaces built with JavaScript components and packaged inside containers.",
+				"deploymentPlatform": "kubernetes",
+				"framework": "reactjs",
+				"language": "javascript",
+				"name": "React Front-End",
+				"type": "application",
+				"version": "v.1.0",
+				"components": ["Deployment", "Service", "Ingress"],
+				"outputs": { "EDP": "", "Kubernetes Cluster": "", "Namespace": "" }
+			}
+		]
+	},
+	{
+		"ID": 3,
+		"name": "Containerized Microservice",
+		"description": "Deploy and manage microservices-based applications in a secure, isolated, containerized environment.",
+		"templates": [
+			{
+				"categoryID": 3,
+				"enterpriseID": 40100,
+				"buildTool": "python",
+				"description": "Create modern, high-performance, web API containerized Application with Python 3.8+ and asyncio.",
+				"deploymentPlatform": "Kubernetes",
+				"framework": "fastapi",
+				"language": "python",
+				"name": "Fast API Microservice",
+				"type": "application",
+				"version": "v.1.0",
+				"components": ["Deployment", "Service"],
+				"outputs": { "EDP": "", "Kubernetes Cluster": "", "Namespace": "" }
+			},
+			{
+				"categoryID": 3,
+				"enterpriseID": 40101,
+				"buildTool": "maven",
+				"description": "Create Java-based RESTful API cloud-native application packaged in a container.",
+				"deploymentPlatform": "kubernetes",
+				"framework": "springboot",
+				"language": "java",
+				"name": "SpringBoot API Microservice",
+				"type": "application",
+				"version": "v.1.0",
+				"components": ["Deployment", "Service"],
+				"outputs": { "EDP": "", "Kubernetes Cluster": "", "Namespace": "" }
+			}
+		]
+	},
+	{
+		"ID": 4,
+		"name": "Relational Database",
+		"description": "Manage relational persistence layer for Applications.",
+		"templates": [
+			{
+				"categoryID": 4,
+				"enterpriseID": 70001,
+				"buildTool": "crossplane",
+				"description": "Create AWS RDS PostgreSQL instance.",
+				"deploymentPlatform": "aws",
+				"framework": "crossplane",
+				"language": "yaml",
+				"name": "Cloud Managed Postgres",
+				"type": "library",
+				"version": "v.1.0",
+				"components": ["RDS", "SG", "DBGroup"],
+				"outputs": { "Security Groups": "", "Subnet": "" }
+			},
+			{
+				"categoryID": 4,
+				"enterpriseID": 70500,
+				"buildTool": "helm",
+				"description": "Create containerized PostgreSQL instance.",
+				"deploymentPlatform": "kubernetes",
+				"framework": "helm",
+				"language": "yaml",
+				"name": "Kubernetes Semi-Managed PostgreSQL",
+				"type": "library",
+				"version": "v.1.0",
+				"components": ["Statefulset", "Service"],
+				"outputs": { "Kubernetes Cluster": "", "Namespace": "", "Size": "" }
+			},
+			{
+				"categoryID": 4,
+				"enterpriseID": 75000,
+				"buildTool": "terraform",
+				"description": "Create fully managed Relational Database instance.",
+				"deploymentPlatform": "azure",
+				"framework": "terraform",
+				"language": "hcl",
+				"name": "Azure Cosmos DB (relational flavor)",
+				"type": "",
+				"version": "v.1.0",
+				"components": ["Cosmos DB"],
+				"outputs": { "Account": "" }
+			}
+		]
+	},
+	{
+		"ID": 5,
+		"name": "NoSQL Database",
+		"description": "Build non-relational persistence layer for Applications.",
+		"templates": [
+			{
+				"categoryID": 5,
+				"enterpriseID": 80010,
+				"buildTool": "terraform",
+				"description": "Create fully managed MongoDB instance.",
+				"deploymentPlatform": "atlas",
+				"framework": "terraform",
+				"language": "hcl",
+				"name": "MongoDB Atlas",
+				"type": "",
+				"version": "v.1.0",
+				"components": ["MongoDB"],
+				"outputs": { "Account": "" }
+			}
+		]
+	},
+	{
+		"ID": 6,
+		"name": "ML and Data processing",
+		"description": "Research Data using AI approach",
+		"templates": [
+			{
+				"categoryID": 6,
+				"enterpriseID": 90001,
+				"buildTool": "cdk",
+				"description": "Processes data from S3 by extracting metadata and labels",
+				"deploymentPlatform": "aws",
+				"framework": "cdk",
+				"language": "python",
+				"name": "Data Processing and Recognition ",
+				"type": "",
+				"version": "v.1.0",
+				"components": ["S3", "Step function", "DynamoDB", "Rekognition"],
+				"outputs": { "Account": "" }
+			}
+		]
+	},
+	{
+		"ID": 7,
+		"name": "ML and Data processing",
+		"description": "Research Data using AI approach",
+		"templates": [
+			{
+				"categoryID": 7,
+				"enterpriseID": 8,
+				"buildTool": "terraform",
+				"description": "Create secure AWS environment based on AWS best practices",
+				"deploymentPlatform": "aws",
+				"framework": "terraform",
+				"language": "hcl",
+				"name": "AWS Landing Zone",
+				"type": "",
+				"version": "v.1.0",
+				"components": ["Account ID", "IAM Roles", "Lambda", "SSM", "SNS", "SQS"],
+				"outputs": {
+					"Account ID": "",
+					"IAM Roles": "",
+					"Lambda": "",
+					"SNS": "",
+					"SQS": "",
+					"SSM": ""
+				}
+			}
+		]
+	}
+]
