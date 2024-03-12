@@ -66,7 +66,7 @@ export const Footer = (): ReactElement => {
 									fontWeight={500}
 									color={blueGrey[200]}
 								>
-									Developer Experience Demo Portal ver. 1.0
+									Developer Experience Demo Portal ver. 1.2.1
 								</Typography>
 							</Grid>
 							<Grid>
