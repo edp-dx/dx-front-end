@@ -1,4 +1,3 @@
-import NotificationsIcon from '@mui/icons-material/Notifications';
 import SearchIcon from '@mui/icons-material/Search';
 import { Container, IconButton, Stack, Tooltip, useTheme } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -13,6 +12,7 @@ import { useOnboardingTourStore } from '~/store/OnboardingTour';
 
 import { HelpMenu } from './components/HelpMenu';
 import { ProfileMenu } from './components/ProfileMenu';
+import { Notifications } from './components/Notifications'; // Adjusted import for new Notifications component
 import { StyledHeader, StyledLogoWrapper, useStyles } from './styles';
 import { HeaderProps } from './types';
 
@@ -72,15 +72,8 @@ export const Header: FC<HeaderProps> = ({ navLinks }): ReactElement => {
 									</Tooltip>
 								</Grid>
 								<Grid>
-									<Tooltip title={'Notifications'} arrow>
-										<IconButton
-											sx={{ color: blueGrey['600'] }}
-											aria-label='Notifications'
-											component='label'
-										>
-											<NotificationsIcon />
-										</IconButton>
-									</Tooltip>
+									{/* Replaced the existing Tooltip with the new Notifications component */}
+									<Notifications />
 								</Grid>
 								<Grid>
 									<HelpMenu />
