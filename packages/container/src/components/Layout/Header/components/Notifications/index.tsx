@@ -18,6 +18,7 @@ export const Notifications = () => {
 
   const handleClick = (event: MouseEvent<HTMLButtonElement>): void => {
     setAnchorEl(event.currentTarget);
+    event.currentTarget.blur();
   };
 
   const handleClose = () => {
