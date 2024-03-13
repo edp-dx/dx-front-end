@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { MouseEvent, useCallback } from 'react';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import NotificationsIcon from '@mui/icons-material/Notifications';
@@ -8,11 +8,11 @@ import { useStyles } from '../../styles';
 export const Notifications = () => {
   const classes = useStyles();
 
-  const handleOpen = React.useCallback((event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleOpen = useCallback((event: MouseEvent<HTMLButtonElement>) => {
     // Logic to handle opening of notifications
   }, []);
 
-  const handleClose = React.useCallback((event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleClose = useCallback((event: MouseEvent<HTMLButtonElement>) => {
     // Logic to handle closing of notifications
   }, []);
 
@@ -28,6 +28,17 @@ export const Notifications = () => {
       >
         <NotificationsIcon />
       </IconButton>
+      <div>
+        <p className={classes.menuItemGreen}>
+          App-32 deployment to Prod successfully completed ...
+        </p>
+        <p className={classes.menuItemYellow}>
+          PR-3727 needs your review ...
+        </p>
+        <p className={classes.menuItemYellow}>
+          Jon Snow needs your approval ...
+        </p>
+      </div>
     </Tooltip>
   );
 };
