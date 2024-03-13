@@ -4,7 +4,7 @@ import IconButton from '@mui/material/IconButton';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { blueGrey } from '@mui/material/colors';
 
-const Notifications = () => {
+export const Notifications = () => {
   return (
     <Tooltip title="Notifications">
       <IconButton
@@ -17,5 +17,3 @@ const Notifications = () => {
     </Tooltip>
   );
 };
-
-export default Notifications;
