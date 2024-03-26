@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { blueGrey } from '@mui/material/colors';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import { useTheme } from '@mui/material/styles';
 import { useStyles } from '../../styles';
 
 export const Notifications = () => {
   const classes = useStyles();
+  const theme = useTheme();
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const handleOpen = (event) => {
+  const handleOpen = useCallback((event) => {
     setAnchorEl(event.currentTarget);
-  };
+  }, [setAnchorEl]);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setAnchorEl(null);
-  };
+  }, [setAnchorEl]);
 
   const isOpen = Boolean(anchorEl);
 
@@ -32,7 +33,7 @@ export const Notifications = () => {
     <>
       <Tooltip title="Notifications">
         <IconButton
-          sx={{ color: blueGrey['600'] }}
+          sx={{ color: theme.palette.secondary.main }}
           aria-label="Notifications"
           component="label"
           className={classes.button}
@@ -60,7 +61,16 @@ export const Notifications = () => {
         }}
       >
         {notifications.map((notification, index) => (
-          <MenuItem key={index} onClick={handleClose}>
+          <MenuItem
+            key={index}
+            onClick={handleClose}
+            sx={{
+              color: theme.palette.text.primary,
+              '&:hover': {
+                backgroundColor: theme.palette.action.hover,
+              },
+            }}
+          >
             {notification}
           </MenuItem>
         ))}
