@@ -20,9 +20,6 @@ export const Notifications = () => {
     <Tooltip title="Notifications">
       <IconButton
         sx={{ color: blueGrey['600'] }}
-        aria-label="Notifications"
-        component="label"
-        className={classes.button}
         onMouseEnter={handleOpen}
         onMouseLeave={handleClose}
       >
